@@ -3,6 +3,7 @@ import React from "react";
 import Logo from "./Logo";
 import Menu from "./Menu";
 import SubMenu from "./SubMenu";
+import MenuIcon from "@mui/icons-material/Menu";
 
 function Header() {
     return (
@@ -11,6 +12,7 @@ function Header() {
                 <Logo />
                 <Menu />
                 <SubMenu />
+                <MenuIcon />
             </nav>
         </header>
     );
