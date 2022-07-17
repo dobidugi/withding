@@ -23,7 +23,8 @@
     "react-dom": "^18.2.0",
     "react-scripts": "5.0.1",
     "typescript": "^4.7.4",
-    "web-vitals": "^2.1.4"
+    "web-vitals": "^2.1.4",
+    "@emotion/babel-plugin-jsx-pragmatic": "^0.1.5"
   },
   "scripts": {
     "start": "react-scripts start",
@@ -49,5 +50,14 @@
       "last 1 safari version"
     ]
   },
-  "homepage": "/"
+  "homepage": "/",
+  "devDependencies": {
+    "eslint": "^8.20.0",
+    "eslint-react": "^0.0.4",
+    "@typescript-eslint/eslint-plugin": "^5.29.0",
+    "@typescript-eslint/parser": "^5.29.0",
+    "@emotion/babel-plugin": "^11.9.2",
+    "@emotion/react": "^11.9.0",
+    "@emotion/styled": "^11.8.1"
+  }
 }
