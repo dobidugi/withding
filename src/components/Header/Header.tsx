@@ -1,4 +1,3 @@
-import { css } from "@emotion/react";
 import React from "react";
 
 function Header() {
@@ -7,4 +6,4 @@ function Header() {
     );
 }
 
-export default Header;  
+export default Header;
