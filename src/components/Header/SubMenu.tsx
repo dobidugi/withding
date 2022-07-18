@@ -9,12 +9,14 @@ function SubMenu() {
             <li>
                 <NavigatorButton
                     text={signin}
+                    target={"/signin"}
                 />
             </li>
 
             <li>
                 <NavigatorButton
                     text={signup}
+                    target={"/signup"}
                 />
             </li>
         </ul>

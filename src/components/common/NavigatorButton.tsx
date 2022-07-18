@@ -1,13 +1,20 @@
 import { css } from "@emotion/react";
-import React from "react";
+import React, { useCallback } from "react";
+import { useNavigate } from "react-router-dom";
 
 interface NavigatorButtonProps {
     text: string;
+    target: string;
 }
 function NavigatorButton(props: NavigatorButtonProps) {
-    const { text } = props;
+    const { text, target } = props;
+    const navigator = useNavigate();
+    const onClick = useCallback(() => {
+        navigator(target);
+    }, [navigator, target]);
+
     return (
-        <a css={style}>{text}</a>
+        <a css={style} onClick={onClick}>{text}</a>
     );
 }
 
