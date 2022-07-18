@@ -1,11 +1,22 @@
 import { css } from "@emotion/react";
+import NavigatorButton from "components/common/NavigatorButton";
 import React from "react";
-
+import text from "../../strings/header";
 function SubMenu() {
+    const { signin, signup } = text.subMenu;
     return (
         <ul css={ulStyle}>
-            <li>sub1</li>
-            <li>sub2</li>
+            <li>
+                <NavigatorButton
+                    text={signin}
+                />
+            </li>
+
+            <li>
+                <NavigatorButton
+                    text={signup}
+                />
+            </li>
         </ul>
     );
 }
